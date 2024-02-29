@@ -8,7 +8,6 @@
     <style>
         .container {
             box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
-            padding: 20px;
             background-color: #000;
             opacity: 0;
             transform: translateY(20px);
@@ -18,9 +17,8 @@
             font-size: 24px;
         }
         body {
-            margin: 0px;
-            background-color: #EEF0E5; 
-            height: 100%;
+            margin: 0;
+            background-color: #EEF0E5;
         }
         .navbar {
             background-color: #304D30;
@@ -30,11 +28,15 @@
         footer{
           background-color: #B6C4B6;
           width: 100%;
-          position: absolute;
+          margin-top: 20px;
           bottom: 0;
         }
         #content{
             padding-bottom: 60px;
+        }
+
+        .hero {
+            padding: 50px;
         }
         
     </style>
@@ -66,7 +68,7 @@
 
     <br><br>
 
-    <div class="container mt-4 bg-dark">
+    <div class="container mt-4 bg-dark hero">
         <div class="row">
             <div class="col-md-8">
                 <h1 class="text-white">Was ist das für ein Projekt?</h1>
@@ -108,7 +110,8 @@
             <div class="card-body">
                 <h5 class="card-title">Zu den Podcasts</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dolor beatae reprehenderit delectus provident reiciendis quibusdam eum sequi voluptates iure vitae dolores magnam quas odit ex quisquam fugit facere error?</p>
-            <a href="BootstrapGrid.html" class="btn btn-primary mx-auto">Open Page</a>
+                <a href="BootstrapGrid.html" class="btn btn-primary mx-auto">Open Page</a>
+            </div>
             <br>
             <div class="card-footer">
                 <small class="text-body-secondary">Last updated 15 minutes ago</small>
@@ -116,10 +119,8 @@
         </div>
     </div>
 
-    <br><br>
 
-
-    <footer class="text-white text-center">
+    <footer class="text-white text-center container-fluid">
       <div id = "content">
             <p>Zu jeder Tageszeit verfuegbar</p>
       </div>
