@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florian Huber - Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <style>
+        .container {
+            box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            background-color: #000;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s, transform 1s; 
+        }
+        .col-md-8 {
+            font-size: 24px;
+        }
+        body {
+            margin: 0px;
+            background-color: #EEF0E5; 
+            height: 100%;
+        }
+        .navbar {
+            background-color: #304D30;
+            height: 50%;
+            width:  100%;
+        }
+        footer{
+          background-color: #B6C4B6;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+        }
+        #content{
+            padding-bottom: 60px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Multimedia-Projekt 3</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="www.youtube.com">Über das Projekt <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="www.youtube.com">Video & Podcast <span class="sr-only"(current)></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#"></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <div class="container mt-4 bg-dark">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="text-white">Was ist das für ein Projekt?</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident cupiditate maxime doloremque nulla eveniet, quibusdam voluptatem temporibus minus asperiores sapiente fuga. Eos laboriosam placeat est explicabo in pariatur commodi distinctio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti amet quos iure? Aliquam, ullam tempora commodi cumque sunt culpa dolores quam, magni sed mollitia excepturi dicta maxime! Numquam, consectetur cumque!</p>
+            </div>
+            <div class="col-md-4">
+                <img src="MicrosoftTeams-image.png" class="img-fluid rounded shadow" alt="Florian Huber" height="400" width="300">
+            </div>
+        </div>
+    </div>
+
+    <div class="card-group container mt-4 bg-dark">
+        <div class="card">
+            <img src="Programmieren.jpg" class="card-img-top" alt="Programmierbild">
+            <div class="card-body">
+                <h5 class="card-title">Über uns</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia sunt velit accusantium sit. Voluptas deserunt aut doloremque, eaque repellendus suscipit cumque ipsa molestiae nam tempore eius, asperiores laborum at officiis?</p>
+            </div>
+            <a href="Übung7_2B/ue7.html" class="btn btn-primary btn-sm mx-auto">Open Page</a>
+            <br>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last updated 48 minutes ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="test.png" class="card-img-top" alt="HTMLCode">
+            <div class="card-body">
+                <h5 class="card-title">Zu den Videos</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fuga nisi magnam id ad explicabo blanditiis, nihil et eveniet dicta voluptatum ea, nulla consequuntur rem perferendis expedita doloribus voluptatibus quam.</p>
+            </div>
+            <a href="Projekt/index.html" class="btn btn-primary btm-sm mx-auto">Open Page</a>
+            <br>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last updated 21 minutes ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="HTMLCode.jpg" class="card-img-top" alt="Code">
+            <div class="card-body">
+                <h5 class="card-title">Zu den Podcasts</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dolor beatae reprehenderit delectus provident reiciendis quibusdam eum sequi voluptates iure vitae dolores magnam quas odit ex quisquam fugit facere error?</p>
+            <a href="BootstrapGrid.html" class="btn btn-primary mx-auto">Open Page</a>
+            <br>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last updated 15 minutes ago</small>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+
+    <footer class="text-white text-center">
+      <div id = "content">
+            <p>Zu jeder Tageszeit verfuegbar</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script>
+        // JavaScript for fading in the elements on scroll
+        const containers = document.querySelectorAll('.container');
+        
+        containers.forEach((container) => {
+            container.style.opacity = '0';
+            container.style.transform = 'translateY(20px)';
+        });
+
+        window.addEventListener('scroll', (event) => {
+            containers.forEach((container) => {
+                const position = container.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight;
+
+                if (position < screenPosition) {
+                    container.style.opacity = '1';
+                    container.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
